@@ -1,14 +1,29 @@
 stylesheet.css
 
+body {
+  background-color: #222222;
+}
+
+#container {
+  width:950px;
+  height:auto;
+  border: 2px dotted red;
+  margin-left:10%;
+}
+
 #header {
-  width: 1100px;
-  height:200px;
-  background-color: #22223;
+ height:250;
+ width:950;
+ border:2px dotted red;
+}
+
+#headspace {
+  margin-left: 10%;
 }
 
 ul {
   list-style-type: none;
-  margin-left: 25%;
+  margin-left: 18%;
 }
 
 li {
@@ -19,6 +34,30 @@ li {
   border: 2px solid #232323;
 
 
+}
+
+#myself {
+  height: 250px;
+  width: 250px;
+  border:1px solid black;
+  margin-top: 50px;
+  float:left;
+  margin-left: 40px;
+}
+
+#player {
+  height:350px;
+  width:600px;
+  border: 2px dotted red;
+  float:left;
+  margin-left:30px;
+}
+
+#footer {
+  width:950px;
+  height:125px;
+  border: 2px dotted red;
+  margin-left:10%;
 }
 
 /*p {
