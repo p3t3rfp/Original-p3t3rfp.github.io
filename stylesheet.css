@@ -1,0 +1,27 @@
+stylesheet.css
+
+#header {
+  width: 1100px;
+  height:200px;
+  background-color: #22223;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 25%;
+}
+
+li {
+  display: inline;
+  margin-left: 20px;
+  margin-right:20px;
+  font-size:20px;
+  border: 2px solid #232323;
+
+
+}
+
+/*p {
+color:red;
+font-size:30px;
+}*/
