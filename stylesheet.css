@@ -5,62 +5,126 @@ body {
 }
 
 #container {
-  width:950px;
+  background-color: #767676;
+  width:954px;
   height:auto;
-  border: 2px dotted red;
+  /*border: 2px dotted red;*/
   margin-left:10%;
+  margin-bottom: 0%;
 }
 
 #header {
- height:250;
+  margin-top:0px;
+  margin-bottom:-6px;
+ height:240;
  width:950;
- border:2px dotted red;
+ /*border:2px dotted red;*/
 }
 
 #headspace {
+  border:2px solid #767676;
   margin-left: 10%;
 }
 
 ul {
+  margin-top:-40px;
   list-style-type: none;
-  margin-left: 18%;
+  margin-left: 15%;
 }
 
 li {
   display: inline;
-  margin-left: 20px;
-  margin-right:20px;
+  padding-left:7px;
+  margin-left: 8px;
+  margin-right:10px;
   font-size:20px;
-  border: 2px solid #232323;
+  border: 2px solid #dddddd;
+  letter-spacing: .5em;
+  color:#ffffff;
+}
 
+li a:link {
+  color:#ffffff;
+  text-decoration: none;
+}
 
+li a:hover {
+  color:#aaa;
+}
+}
+
+#name {
+  margin-left: 55px;
+  font-variant: small-caps;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 #myself {
   height: 250px;
   width: 250px;
-  border:1px solid black;
-  margin-top: 50px;
+  /*border:1px solid black;*/
+  margin-top: 20px;
   float:left;
-  margin-left: 40px;
+  margin-left: 33px;
+  margin-bottom: 10px;
+  font-family: Times;
+  font-size: 18px;
+}
+
+#myself p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color:#ababab;
 }
 
 #player {
   height:350px;
   width:600px;
-  border: 2px dotted red;
+  border: 4px solid black;
   float:left;
   margin-left:30px;
+  margin-top: 30px;
+  margin-bottom:20px;
+  margin-right: 10px;
+  clear:right;
+}
+
+#bodyContent {
+  display:block;
+  padding-bottom:10px;
+  margin-top:2%;
+  margin-left: 30px;
+  margin-bottom: 0%;
+  color:#ababab;
+  /*border:3px solid black;*/
+}
+
+#bodyContent p {
+  margin-top: 19px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  /*border-top:2px solid black;*/
 }
 
 #footer {
-  width:950px;
+  background-color: #878787;
+  width:954px;
   height:125px;
-  border: 2px dotted red;
+  border-top: 2px dashed #dddddd;
   margin-left:10%;
+  margin-top:-16px;
+  color: #444444;
 }
 
-/*p {
-color:red;
-font-size:30px;
-}*/
+#footer p:first-child {
+  margin-left:31%;
+  padding-top: 70px;
+}
+
+#footer p:nth-child(2) {
+  margin-top: -18px;
+  margin-left:37%;
+  /*border:1px dashed red;*/
+  }
