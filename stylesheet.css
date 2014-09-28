@@ -299,3 +299,15 @@ a:hover {
   display:block;
   border: 1px solid red;
 }
+
+      /* < -- About me styles -- > */
+
+#phone {
+  background-color: #222222;
+  width: 954px;
+  font-size: 50px;
+  font-family: impact;
+  margin-left: 44%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
