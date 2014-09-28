@@ -52,6 +52,11 @@ header {
   margin-left:40%;
 }
 
+#precious a {
+  display: block;
+  clear:both;
+}
+
 footer {
   background-color:#cccccc;
   height:75px;
