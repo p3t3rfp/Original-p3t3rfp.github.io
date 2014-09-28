@@ -304,10 +304,11 @@ a:hover {
 
 #phone {
   background-color: #222222;
-  width: 954px;
+  width: 550px;
   font-size: 50px;
   font-family: impact;
-  margin-left: 44%;
+  margin-left: 10.5%;
   margin-top: 10%;
   margin-bottom: 10%;
+  padding-left: 396px;
 }
