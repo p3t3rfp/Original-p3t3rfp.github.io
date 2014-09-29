@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
+    <title>Blog Template</title>
+  </head>
+
+  <body>
+    <div id="container">
+    <header>
+
+      <div id="heading">
+        Peter's Blog
+      </div>
+      <div id="selfie">
+        <img src="../IMG_0650.jpg" alt="ME!" />
+      </div>
+      <div id="nav">
+        <!-- Make buttons -->
+          <ul>
+            <li><a href="../porfolio.html">PORTFOLIO</a></li>
+            <li><a href="../aboutme.html">ABOUT ME</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>
+            <li><a href="../index.html">HOME</a></li>
+          </ul>
+        </div>
+    </header>
+
+
+      <div id="date"><!--Today's date-->9/28/14</div>
+
+      <div id="title"><!--Call it something-->Margins Borders and Padding, Oh My!</div>
+
+      <div id="bodyContent">
+        <div id="previous">
+            <p><a href="../t1-git-blog.html">Link to week 1 blog</a></p>
+            <p><a href="../c1-chefs-kitchen.html">Link to week 1 blog #2</a></p>
+            <p><a href="../t2-css-design.html"></a></p>
+        </div>
+        <p> <!--Put a post in here-->
+          So I've gained a pretty solid grasp on the differences between margins, borders and padding. All three of these changes affect an element in a different way, and also how the element relates to others around it. Without further ado....
+        </p>
+
+        <p>Let's start with borders. Borders are probably the most simple to understand. These simply surround the element, and can be applied to a single side, such as the top or bottom to form a line break. That's what I did with my footer:
+        </p>
+
+        <p>#footer {
+          background-color: #878787;
+          width:954px;
+          height:125px;
+          border-top: 2px dashed #dddddd;
+          margin-left:10%;
+          margin-top:-16px;
+          color: #444444;
+        }</p>
+        <img src="../exFooter.png">
+        <p>Well then, I suppose the next item up would be margin, and I feel like it relates to the border of an element. I you were to put a border all the way around an element, you could then see how changing that element's margin will affect it. If you were to give it a top-margin: 50px, you would see the distance between that element and the next element it relates to increase by 50 pixels. This works on all sides of the element. You can also set negative values for the margin to pull elements closer together, or even overlap. </p>
+
+        <p>Finally, we have padding of elements. I like to think of this as actually "within" the element. You can look at this at work again by applying a border all the way around the element. If you want the content inside of an element to move away from the border, you would apply padding-left, padding-right, padding-top, or padding-bottom to move it right, left, down, or up respectively. The use of padding really allows you to get content centered and display in a manner that you want.</p>
+
+        <p>Thanks for trying to see it from my perspective.</p>
+
+      </div>
+      <div id="footer">
+
+        <a href="https://github.com/p3t3rfp">
+          <img class="icons" id="github" src="../social-icons/github.png" />
+        </a>
+
+        <a href="https://plus.google.com/u/0/">
+          <img class="icons" id="google+" src="../social-icons/google+.png" />
+        </a>
+
+        <a href="https://www.linkedin.com/profile/view?id=368057783&trk=nav_responsive_tab_profile">
+          <img class="icons" id="lin" src="../social-icons/linkedin.png" />
+        </a>
+
+        <a href="http://devbootcamp.com/">
+          <img class="icons" id="ruby" src="../social-icons/Ruby.png" />
+        </a>
+
+        <a href="https://twitter.com/p3t3rfp">
+          <img class="icons" id="twitter" src="../social-icons/twitter.png" />
+        </a>
+
+        <!-- standard stuff -->
+          <p>All content contributed or approved by Peter Fitzpatrick</p>
+          <p>Copyright &copy Peter Fitzpatrick 2014</p>
+      </div>
+    </div>
+  </body>
+
+</html>
