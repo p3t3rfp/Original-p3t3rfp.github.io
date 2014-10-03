@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
+    <title>Peter's Blog</title>
+  </head>
+
+  <body>
+    <div id="container">
+    <header>
+
+      <div id="heading">
+        Peter's Blog
+      </div>
+      <div id="selfie">
+        <img src="../IMG_0650.jpg" alt="ME!" />
+      </div>
+      <div id="nav">
+        <!-- Make buttons -->
+          <ul>
+            <li><a href="../porfolio.html">PORTFOLIO</a></li>
+            <li><a href="../aboutme.html">ABOUT ME</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>
+            <li><a href="../index.html">HOME</a></li>
+          </ul>
+        </div>
+    </header>
+
+
+      <div id="date"><!--Today's date-->10/02/14</div>
+
+      <div id="title"><!--Call it something-->Arrays and Hashes</div>
+
+      <div id="bodyContent">
+        <div id="previous">
+            <p><a href="../blog/t1-git-blog.html">Link to week 1 blog</a></p>
+            <p><a href="../blog/c1-chefs-kitchen.html">Link to week 1 blog #2</a></p>
+            <p><a href="../blog/t2-css-design.html">Margins Borders and Padding, Oh My!</a></p>
+            <p><a href="../blog/t4-arrays-hashes.html">Arrays and Hashes</a></p>
+        </div>
+        <p> <!--Put a post in here-->Arrays and hashes are useful for containing large amounts of elements in a single place. Both are able to accept more elements and store them, or remove or change the value of the elements contained within them.
+
+          Arrays can be set up by either using literal notation:
+          array = []
+
+          Or, you can use an array object constructor:
+
+          array = Array.new
+
+          Array's elements are accesible by their index number. Such that:
+          array=[1,4,6,7]
+
+          array[1]  => will output the element in the second position [4]
+
+          Arrays are indexed starting with 0 as the first position, or as Chris Pine said, "zeroith" position. The first element will have an index[0]. Every array will contain the number of indexes equal to array.length - 1 because you start with 0 as your first index position. You are able to delete elements or add elements to arrays, or even change the value of an index position in arrays.
+
+          Arrays are capable of containing arrays themselves too. These are called multi-dimensional arrays:
+
+          array =[['good','bad','ugly'],[3,2,1],['here',1,'we','go',2]]
+
+          The arrays contained within the array are called sub-arrays. Each of their elements are accesible by first calling the parent array's index number and then the element itself's index:
+
+          array[2][1] => should give you 2!
+
+          I hope I'm right on that!
+
+          To add elements to arrays, you can use array.push[]. This will add whatever you input to the end of the array.
+
+          You can also use array.pop, and this will remove the last element of the array and tell you what it was.
+
+          I won't lie, I still have so much more to learn about utilizing the power of arrays.
+
+          Moving on to hashes........
+
+          Hashes are similar to arrays in that they are able to store large amounts of elements in a single place. The main difference is that hashes use a key:value pair structure. Each element in a hash is either an object key, or the value associated with that object. The creation of hashes is similar to arrays.
+
+          my_hash = {'one' => 'thing'}
+
+          Or, you can use the literal notation:
+
+          my_hash = Hash.new
+
+          As you can see, the set up is slightly different for making the key:value pairs. You must use the '=>' notation to assign a value to a key. Keys and values can be any ruby objects.
+
+          To access either one from the hash, use this notation:
+
+          puts "#{either key or value}"
+
+          This just scrapes the surface of how and when you can use these two objects, but I need so much more practice to be able to explain them more in depth.
+
+          Again, so much more to learn about the awesome power of these two objects. More to come as I come more into all of this.
+
+        </p>
+      </div>
+      <div id="footer">
+
+        <a href="https://github.com/p3t3rfp">
+          <img class="icons" id="github" src="../social-icons/github.png" />
+        </a>
+
+        <a href="https://plus.google.com/u/0/">
+          <img class="icons" id="google+" src="../social-icons/google+.png" />
+        </a>
+
+        <a href="https://www.linkedin.com/profile/view?id=368057783&trk=nav_responsive_tab_profile">
+          <img class="icons" id="lin" src="../social-icons/linkedin.png" />
+        </a>
+
+        <a href="http://devbootcamp.com/">
+          <img class="icons" id="ruby" src="../social-icons/Ruby.png" />
+        </a>
+
+        <a href="https://twitter.com/p3t3rfp">
+          <img class="icons" id="twitter" src="../social-icons/twitter.png" />
+        </a>
+
+        <!-- standard stuff -->
+          <p>All content contributed or approved by Peter Fitzpatrick</p>
+          <p>Copyright &copy Peter Fitzpatrick 2014</p>
+      </div>
+    </div>
+  </body>
+
+</html>
