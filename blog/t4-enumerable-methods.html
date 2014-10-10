@@ -40,12 +40,29 @@
             <p><a href="../blog/t2-css-design.html">Margins Borders and Padding, Oh My!</a></p>
             <p><a href="../blog/t4-arrays-hashes.html">Arrays and Hashes</a></p>
             <p><a href="../blog/c3_thinking-style.html">Think About It</a></p>
-            <p><a href="../blog/t4-enumerable-methods.html"></a>Around the Globe..I Mean Code</p>
+            <p><a href="../blog/t4-enumerable-methods.html">Around the Globe..I Mean Code</a></p>
             <p><a href="../blog/c4-tech-issues.html">The End is Near</a></p>
         </div>
-        <p> <!--Put a post in here-->
+        <br>
+        <br>
+        <h2>Navigating your code with map</h2>
+        <p> <!--Put a post in here-->For instances in your coding where you need to navigate through some array or hash, you could certainly use a "for" statement. This would look something like this:
 
         </p>
+        <p><img src="./first_ex.png"> *Both images taken from <a href="http://ruby.bastardsbook.com/chapters/enumerables/">here</a>*
+        </p>
+              <p>But what if you wanted to reuse the original data contained in the variable "arr"? Using a "for" statement and executing the code within will alter or change the original data. Luckily there's a solution for this. </p>
+
+              <h3>Mapping</h3>
+
+              <p>Making use of the "map" method will allow you to iterate over an array or hash and produce a new array with the results of your code. It would look something like this:<br>
+                <img src="./second_ex.png">
+                *Both images taken from <a href="http://ruby.bastardsbook.com/chapters/enumerables/">here</a>*
+              </p>
+              <p>Map can be used alternately by calling "collect". These two methods work in the same way with the same syntax. There is one more way in which to invoke the "map" method, and this one is destructive. This means that by calling "map!" with the exclamation mark, the code that is in the block will iterate through each element and actually alter it's value. So, you can get the functionality of an "each" method by calling "map!"</p>
+              <br>
+              <br>
+
       </div>
       <div id="footer">
 
