@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
+    <title>Peter's Blog</title>
+  </head>
+
+  <body>
+    <div id="container">
+    <header>
+
+      <div id="heading">
+        Peter's Blog
+      </div>
+      <div id="selfie">
+        <img src="../IMG_0650.jpg" alt="ME!" />
+      </div>
+      <div id="nav">
+        <!-- Make buttons -->
+          <ul>
+            <li><a href="../porfolio.html">PORTFOLIO</a></li>
+            <li><a href="../aboutme.html">ABOUT ME</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>
+            <li><a href="../index.html">HOME</a></li>
+          </ul>
+        </div>
+    </header>
+
+
+      <div id="date"><!--Today's date-->10/18/14</div>
+
+      <div id="title"><!--Call it something-->Jewell School</div>
+
+      <div id="bodyContent">
+        <div id="previous">
+            <p><a href="../blog/t1-git-blog.html">Link to week 1 blog</a></p>
+            <p><a href="../blog/c1-chefs-kitchen.html">Link to week 1 blog #2</a></p>
+            <p><a href="../blog/t2-css-design.html">Margins Borders and Padding, Oh My!</a></p>
+            <p><a href="../blog/t4-arrays-hashes.html">Arrays and Hashes</a></p>
+            <p><a href="../blog/c3_thinking-style.html">Think About It</a></p>
+            <p><a href="../blog/t4-enumerable-methods.html">Around the Globe..I Mean Code</a></p>
+            <p><a href="../blog/c4-tech-issues.html">The End is Near</a></p>
+            <p><a href="../blog/t5-ruby-classes.html">Jewell School</a></p>
+            <p><a href="../blog/c5-feedback.html">'Let me hear ya holla'</a></p>
+        </div>
+
+        <h2>Jewell School.....Ruby Classes</h2>
+
+        <p> <!--Put a post in here-->At times in coding it is necessary to have tons of objects that are similar in many ways, but different as well. To create instances of each object and pass along its similar characteristics every time would get extremely repetitive and time consuming. Luckily we can make use of <a href="http://www.ruby-doc.org/core-2.1.3/Class.html">Ruby Classes</a> to do a lot of the repetitive work for us. Classes can be thought of as different catergories of things. You can have many different catergories and many different things or "objects" in each catergory. Different "objects" can have many similarities in type, but also be different in their appearance or qualities. Let's look at this in a real world environment like a school. </p>
+
+        <p>I went to a small school that had K-12 grade all together. The school has certain things that are similar in structure, like every grade has a teacher and students, but every grade does not have an equal number of students. So there are some similarities in each grade, but at the same time they have differences too. The thing that is constant is that every grade is the same type of thing. So in order to group all of these grades together in one place, the school, we would create a "class" for it in Ruby. Here's an example:</p>
+
+        <img src="./class_code_snippit.png">
+
+        <p>#Grade is a constant and is capitalized to show this. It is a new object and can have many instances of itself. Different grades(1st,2nd....) are all Grades. <br><br>
+
+      class Grade <br><br>
+
+    #This is setting up "instance variables" that can be used throughout the class "Grade" These are attributes of each instance of "Grade"
+    #(attribute accessor) these will be seen like this: @grade_number,@teachers etc. <br><br>
+
+        attr_accessor :name, :grade_number, :num_of_pupils, :teacher <br><br>
+
+    #This will define the initialize method which will populate every instance of Grade with the same attributes. These are required inputs to create an instance. <br><br>
+
+        def initialize(name, grade_number, num_of_pupils, teacher) <br>
+          @name = name <br>
+          @grade_number = grade_number <br>
+          @num_of_pupils = num_of_pupils <br>
+          @teacher = teacher <br>
+          if grade_number == "kindergarten" <br>
+            puts "Welcome to #{grade_number}, #{name}. You have #{num_of_pupils.to_i - 1} classmates this year, and your teacher is #{teacher}." <br>
+          else <br>
+            puts "Welcome to #{grade_number} grade, #{name}. You have #{num_of_pupils.to_i - 1} classmates this year, and your teacher is #{teacher}." <br>
+          end <br>
+        end <br><br>
+
+#Every time a new instance of Grade is produced, the greeting will be printed out with a puts (put string)method. <br><br>
+
+#You can create new methods, or actions, to perform on each instance of Grade. Using dot notation to combine methods and objects, you can manipulate them. <br><br>
+
+#Here's another method definition: <br><br>
+
+        def dismissal <br>
+          if @grade_number == "kindergarten" <br>
+            puts "Dismissal time for #{grade_number} is 1:00." <br>
+          else <br>
+            puts "Regular Grades are dismissed at 3:00." <br>
+          end <br>
+        end <br><br>
+
+      end <br><br>
+
+#So we determine that if your Grade is kindergarten, you will be dismissed at 1:00 and everyone else is dismissed at 3:00. <br><br>
+
+#Here's how you create a new instance of a Grade: <br><br>
+
+      kindergarten = Grade.new("Sarah", "kindergarten", 44, "Mrs. Mackey") <br><br>
+
+      first = Grade.new("Jo-Bill", "first", 30, "Mr. Blah")#Required inputs to  initialize<br><br>
+
+#And here's how you use dot notation to perform actions on your new instance of a Grade: <br><br>
+
+      kindergarten.dismissal <br><br>
+
+      first.dismissal <br><br>
+
+
+</p>
+<p>So creating classes in Ruby is very useful for making lots of similar items more quickly than creating them individually. It's a nice way to keep your objects from growing out of control and consuming your time making them. Classes will keep them all together within the same guidelines, but will allow you to make them as individual as they need to be. Classes are a super useful tool.</p>
+
+
+
+
+        </p>
+      </div>
+      <div id="footer">
+
+        <a href="https://github.com/p3t3rfp">
+          <img class="icons" id="github" src="../social-icons/github.png" />
+        </a>
+
+        <a href="https://plus.google.com/u/0/">
+          <img class="icons" id="google+" src="../social-icons/google+.png" />
+        </a>
+
+        <a href="https://www.linkedin.com/profile/view?id=368057783&trk=nav_responsive_tab_profile">
+          <img class="icons" id="lin" src="../social-icons/linkedin.png" />
+        </a>
+
+        <a href="http://devbootcamp.com/">
+          <img class="icons" id="ruby" src="../social-icons/Ruby.png" />
+        </a>
+
+        <a href="https://twitter.com/p3t3rfp">
+          <img class="icons" id="twitter" src="../social-icons/twitter.png" />
+        </a>
+
+        <!-- standard stuff -->
+          <p>All content contributed or approved by Peter Fitzpatrick</p>
+          <p>Copyright &copy Peter Fitzpatrick 2014</p>
+      </div>
+    </div>
+  </body>
+
+</html>
