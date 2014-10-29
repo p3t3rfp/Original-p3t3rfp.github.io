@@ -4,7 +4,7 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
-    <title>Blog Template</title>
+    <title>Peter's Blog</title>
   </head>
 
   <body>
@@ -29,9 +29,9 @@
     </header>
 
 
-      <div id="date"><!--Today's date-->9/28/14</div>
+      <div id="date"><!--Today's date-->10/28/14</div>
 
-      <div id="title"><!--Call it something-->Margins Borders and Padding, Oh My!</div>
+      <div id="title"><!--Call it something-->Ruby Variable Scope</div>
 
       <div id="bodyContent">
         <div id="previous">
@@ -47,29 +47,17 @@
             <p><a href="../blog/c6-stereotype-threat.html">Stereotypes</a></p>
             <p><a href="../blog/t6-oop-concepts.html">Ruby Variable Scope</a></p>
         </div>
-        <p> <!--Put a post in here-->
-          So I've gained a pretty solid grasp on the differences between margins, borders and padding. All three of these changes affect an element in a different way, and also how the element relates to others around it. Without further ado....
+        <h2>Ruby Variable Scope</h2>
+        <p> <!--Put a post in here-->There are four distinct types of variables in Ruby programming. These are: Global, class, instance and local. I will attempt to describe the difference in these variable types and the common use of them.</p>
+        <h3>Global</h3>
+        <p>Global variables can be recognized by the $ that precedes them in their declaration. Here's an example: $hi_there = "Hi there". Global variables are accessible anywhere in your code. This means that they can also be changed anywhere in your program as well, and this can lead to issues with tracking them.</p>
+        <h3>Class</h3>
+        <p>Class variable are preceded by two @ symbols like this: @@variable = "something". Class variables are similar to global variables, but they are only accessible to instances of objects inside of a class. Objects from other Classes cannot access them. If you change the value of a class variable, it will in affect change the value for each instance of an object using that variable within that class.</p>
+        <h3>Instance</h3>
+        <p>Instance variables are declared in this way: @something = "some thing". You can see that they are similar to class variables, but only contain a single @ symbol. Instance variables are only accessible to other objects inside of their same class. They can be used by other instances of objects and have separate values for each one. If you assign a value to the instance variable for one object, it can be changed and used by another instance of an object without affecting the other object. </p>
+        <h3>Local</h3>
+        <p>Local variables are declared by using either a lower case letter or underscore to begin like this: someVariable = 6 or _this_works_too = 5. Local variables are only available locally to their declaration. This means that they can only be used by the method or loop in which they are created. They cannot be accessed or used outside of those. You can use the same local variable again and again as long as it is contained inside of a block of code.
         </p>
-
-        <p>Let's start with borders. Borders are probably the most simple to understand. These simply surround the element, and can be applied to a single side, such as the top or bottom to form a line break. That's what I did with my footer:
-        </p>
-
-        <p>#footer {
-          background-color: #878787;
-          width:954px;
-          height:125px;
-          border-top: 2px dashed #dddddd;
-          margin-left:10%;
-          margin-top:-16px;
-          color: #444444;
-        }</p>
-        <img src="../blog/exFooter.png">
-        <p>Well then, I suppose the next item up would be margin, and I feel like it relates to the border of an element. I you were to put a border all the way around an element, you could then see how changing that element's margin will affect it. If you were to give it a top-margin: 50px, you would see the distance between that element and the next element it relates to increase by 50 pixels. This works on all sides of the element. You can also set negative values for the margin to pull elements closer together, or even overlap. </p>
-
-        <p>Finally, we have padding of elements. I like to think of this as actually "within" the element. You can look at this at work again by applying a border all the way around the element. If you want the content inside of an element to move away from the border, you would apply padding-left, padding-right, padding-top, or padding-bottom to move it right, left, down, or up respectively. The use of padding really allows you to get content centered and display in a manner that you want.</p>
-
-        <p>Thanks for trying to see it from my perspective.</p>
-
       </div>
       <div id="footer">
 
