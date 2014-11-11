@@ -57,7 +57,7 @@ header {
   clear:both;
 }
 
-footer {
+/*footer {
   background-color:#cccccc;
   height:75px;
   padding-top:7px;
@@ -69,4 +69,35 @@ footer p:first-child {
 
 footer p:nth-child(2) {
   margin-left:39%;
+  }*/
+
+  #footer {
+  background-color: #878787;
+  width:90%;
+  height:125px;
+  border-top: 2px dashed #dddddd;
+  border-right: 4px solid #878787;
+  margin-left:5%;
+  /*margin-top:-16px;*/
+  color: #444444;
+}
+
+.icons {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+#github {
+  margin-left: 37%;
+}
+
+#footer p:nth-child(6) {
+  margin-left:31%;
+  padding-top: 20px;
+}
+
+#footer p:nth-child(7) {
+  margin-top: -14px;
+  margin-left:37%;
+  /*border:1px dashed red;*/
   }
