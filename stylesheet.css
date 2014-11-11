@@ -266,7 +266,7 @@ a:hover {
 }
 
 #portfolioPage {
-  width:80%;
+  width:100%;
   height: 750px;
   /*margin-bottom: 5%;*/
   /*clear:both;*/
@@ -289,14 +289,16 @@ a:hover {
 }
 
 #left {
+  width: 45%;
   float:left;
   display:inline-block;
   border: 1px solid red;
 }
 
 #right {
+  width: 45%;
   float:right;
-  display:block;
+  display:inline-block;
   border: 1px solid red;
 }
 
