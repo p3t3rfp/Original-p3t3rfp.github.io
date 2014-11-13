@@ -1,8 +1,8 @@
 #header {
   margin-top:0px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   /*margin-bottom:-6px;*/
- height:240px;
+ height:18%;
  width:100%;
  /*border:2px dotted red;*/
 }
@@ -15,16 +15,33 @@
 
 #nav ul {
   margin-top:-40px;
+  margin-bottom: 0px;
   list-style-type: none;
-  margin-left: 14%;
+  margin-left: 15%;
+  margin-right: 12%;
+  width: 70%;
+  min-width: 60%;
 }
 
 #nav li {
   display: inline;
+  width: auto;
   padding-left:7px;
   margin-left: 8px;
   margin-right:10px;
-  font-size:20px;
+  font-size:20px auto;
+  border: 2px solid #dddddd;
+  letter-spacing: .5em;
+  color:#ffffff;
+}
+
+#nav li {
+  display: inline;
+  width: auto;
+  padding-left:7px;
+  margin-left: 8px;
+  margin-right:10px;
+  font-size:20px auto;
   border: 2px solid #dddddd;
   letter-spacing: .5em;
   color:#ffffff;
@@ -77,12 +94,15 @@ a:hover {
 
 
 
-#container {
+.container {
   background-color: #767676;
   width:90%;
   height:auto;
+  overflow: hidden;
+  padding-top: 2%;
   /*border: 2px dotted red;*/
   margin-left:5%;
+  margin-right: 5%;
   margin-bottom: 0%;
   margin-top: 0px;
   border-right: 4px solid #767676;
@@ -95,21 +115,25 @@ a:hover {
   /*border:1px dashed red;
 }*/
 
-#bodyContent {
+/*#bodyContent {
   border-top:1px solid black;
-}
+}*/
 
 #date {
-  height:20px;
+  height:30px;
   width:120px;
   /*border:1px dotted red;*/
   margin-top:20px;
+  clear: both;
 }
 
 #title {
   font-size:30px;
   font-variant: small-caps;
   margin-left:40%;
+  clear: both;
+  /*border:1px dotted red;*/
+
 }
 
 #previous a {
@@ -117,37 +141,41 @@ a:hover {
   clear:both;
 }
 
-/*footer {
-  background-color:#cccccc;
-  height:75px;
-  padding-top:7px;
+#cultural {
+  display:inline-block;
+  width: 40%;
+  margin-left: 10%;
 }
 
-footer p:first-child {
-  margin-left:32%;
+#technical {
+  display: inline-block;
+  width: 40%;
+  margin-left: 7%;
 }
-
-footer p:nth-child(2) {
-  margin-left:39%;
-  }*/
 
   #footer {
   background-color: #878787;
-  width:100%;
+  width:90%;
   height:125px;
   border-top: 2px dashed #dddddd;
   border-right: 4px solid #878787;
   margin-left:5%;
+  text-align: center;
   /*margin-top:-16px;*/
   color: #444444;
+  clear: both;
 }
 
+#iconWrap {
+  width: 87%;
+  margin-left: 4%;
+}
 .icons {
-  margin-left: 40px;
+  margin-left: 6%;
   margin-top: 20px;
 }
 
-#github {
+/*#github {
   margin-left: 37%;
 }
 
@@ -159,5 +187,5 @@ footer p:nth-child(2) {
 #footer p:nth-child(7) {
   margin-top: -14px;
   margin-left:37%;
-  /*border:1px dashed red;*/
-  }
+  /*border:1px dashed red;
+  }*/
