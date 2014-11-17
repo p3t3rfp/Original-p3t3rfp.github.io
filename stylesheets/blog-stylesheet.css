@@ -97,6 +97,10 @@ a:hover {
   border-right: 4px solid #767676;
 }
 
+#bodyContent {
+  width:95%;
+}
+
 /*header {
   background-color:#cccccc;
   height:175px;
