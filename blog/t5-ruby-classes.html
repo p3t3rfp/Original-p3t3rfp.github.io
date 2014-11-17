@@ -8,25 +8,27 @@
   </head>
 
   <body>
-    <div id="container">
-    <header>
+    <div id="header">
 
-      <div id="heading">
-        Peter's Blog
-      </div>
-      <div id="selfie">
-        <img src="../IMG_0650.jpg" alt="ME!" />
-      </div>
-      <div id="nav">
+          <!-- Image or logo -->
+        <a href="../index.html">
+          <img id="headspace" src="../headergraphic.jpg" alt="header graphic" />
+        </a>
+
+        <div id="nav">
         <!-- Make buttons -->
           <ul>
-            <li><a href="../porfolio.html">PORTFOLIO</a></li>
-            <li><a href="../aboutme.html">ABOUT ME</a></li>
-            <li><a href="../contact.html">CONTACT</a></li>
-            <li><a href="../index.html">HOME</a></li>
+            <li><a href="porfolio.html">PORTFOLIO</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="blog/blog-index.html">BLOG</a></li>
           </ul>
         </div>
-    </header>
+
+      </div>
+
+      <div class="container">
+
 
 
       <div id="date"><!--Today's date-->10/18/14</div>
@@ -69,45 +71,46 @@
           end <br>
         end <br><br>
 
-#Every time a new instance of Grade is produced, the greeting will be printed out with a puts (put string)method. <br><br>
+        #Every time a new instance of Grade is produced, the greeting will be printed out with a puts (put string)method. <br><br>
 
-#You can create new methods, or actions, to perform on each instance of Grade. Using dot notation to combine methods and objects, you can manipulate them. <br><br>
+        #You can create new methods, or actions, to perform on each instance of Grade. Using dot notation to combine methods and objects, you can manipulate them. <br><br>
 
-#Here's another method definition: <br><br>
+        #Here's another method definition: <br><br>
 
-        def dismissal <br>
-          if @grade_number == "kindergarten" <br>
-            puts "Dismissal time for #{grade_number} is 1:00." <br>
-          else <br>
-            puts "Regular Grades are dismissed at 3:00." <br>
-          end <br>
-        end <br><br>
+                def dismissal <br>
+                  if @grade_number == "kindergarten" <br>
+                    puts "Dismissal time for #{grade_number} is 1:00." <br>
+                  else <br>
+                    puts "Regular Grades are dismissed at 3:00." <br>
+                  end <br>
+                end <br><br>
 
-      end <br><br>
+              end <br><br>
 
-#So we determine that if your Grade is kindergarten, you will be dismissed at 1:00 and everyone else is dismissed at 3:00. <br><br>
+        #So we determine that if your Grade is kindergarten, you will be dismissed at 1:00 and everyone else is dismissed at 3:00. <br><br>
 
-#Here's how you create a new instance of a Grade: <br><br>
+        #Here's how you create a new instance of a Grade: <br><br>
 
-      kindergarten = Grade.new("Sarah", "kindergarten", 44, "Mrs. Mackey") <br><br>
+              kindergarten = Grade.new("Sarah", "kindergarten", 44, "Mrs. Mackey") <br><br>
 
-      first = Grade.new("Jo-Bill", "first", 30, "Mr. Blah")#Required inputs to  initialize<br><br>
+              first = Grade.new("Jo-Bill", "first", 30, "Mr. Blah")#Required inputs to  initialize<br><br>
 
-#And here's how you use dot notation to perform actions on your new instance of a Grade: <br><br>
+        #And here's how you use dot notation to perform actions on your new instance of a Grade: <br><br>
 
-      kindergarten.dismissal <br><br>
+              kindergarten.dismissal <br><br>
 
-      first.dismissal <br><br>
+              first.dismissal <br><br>
 
 
-</p>
-<p>So creating classes in Ruby is very useful for making lots of similar items more quickly than creating them individually. It's a nice way to keep your objects from growing out of control and consuming your time making them. Classes will keep them all together within the same guidelines, but will allow you to make them as individual as they need to be. Classes are a super useful tool.</p>
+        </p>
+        <p>So creating classes in Ruby is very useful for making lots of similar items more quickly than creating them individually. It's a nice way to keep your objects from growing out of control and consuming your time making them. Classes will keep them all together within the same guidelines, but will allow you to make them as individual as they need to be. Classes are a super useful tool.</p>
 
 
 
 
         </p>
       </div>
+    </div>
       <div id="footer">
 
         <a href="https://github.com/p3t3rfp">
